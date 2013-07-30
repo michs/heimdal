@@ -619,7 +619,8 @@ kadm5_log_replay_modify (kadm5_server_context *context,
 	}
     }
     if (mask & KADM5_LAST_PWD_CHANGE) {
-	abort ();		/* XXX */
+      krb5_warnx (context->context, "Unimplemented mask KADM5_LAST_PWD_CHANGE");
+      /* abort ();		*//* XXX */
     }
     if (mask & KADM5_ATTRIBUTES) {
 	ent.entry.flags = log_ent.entry.flags;
@@ -659,16 +660,20 @@ kadm5_log_replay_modify (kadm5_server_context *context,
 	ent.entry.kvno = log_ent.entry.kvno;
     }
     if (mask & KADM5_MKVNO) {
-	abort ();		/* XXX */
+      krb5_warnx (context->context, "Unimplemented mask KADM5_KVNO");
+      /* abort ();		*//* XXX */
     }
     if (mask & KADM5_AUX_ATTRIBUTES) {
-	abort ();		/* XXX */
+      krb5_warnx (context->context, "Unimplemented mask KADM5_AUX_ATTRIBUTES");
+      /* abort ();		*//* XXX */
     }
     if (mask & KADM5_POLICY) {
-	abort ();		/* XXX */
+      krb5_warnx (context->context, "Unimplemented mask KADM5_POLICY");
+      /* abort ();		*//* XXX */
     }
     if (mask & KADM5_POLICY_CLR) {
-	abort ();		/* XXX */
+      krb5_warnx (context->context, "Unimplemented mask KADM5_POLICY_CLR");
+      /* abort ();		*//* XXX */
     }
     if (mask & KADM5_MAX_RLIFE) {
 	if (log_ent.entry.max_renew == NULL) {
@@ -686,13 +691,16 @@ kadm5_log_replay_modify (kadm5_server_context *context,
 	}
     }
     if (mask & KADM5_LAST_SUCCESS) {
-	abort ();		/* XXX */
+      krb5_warnx (context->context, "Unimplemented mask KADM5_LAST_SUCCESS");
+      /* abort ();		*//* XXX */
     }
     if (mask & KADM5_LAST_FAILED) {
-	abort ();		/* XXX */
+      krb5_warnx (context->context, "Unimplemented mask KADM5_LAST_FAILED");
+      /* abort ();		*//* XXX */
     }
     if (mask & KADM5_FAIL_AUTH_COUNT) {
-	abort ();		/* XXX */
+      krb5_warnx (context->context, "Unimplemented mask KADM5_FAIL_AUTH_COUNT");
+      /* abort ();		*//* XXX */
     }
     if (mask & KADM5_KEY_DATA) {
 	size_t num;
