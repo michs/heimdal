@@ -45,8 +45,6 @@
 int numerror;
 extern FILE *yyin;
 
-extern void yyparse(void);
-
 long base_id;
 int number;
 char *prefix;
